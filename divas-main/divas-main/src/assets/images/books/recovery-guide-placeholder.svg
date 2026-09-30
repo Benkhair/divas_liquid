@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960" role="img" aria-labelledby="title description">
+  <title id="title">The Divas Care Post-Op Recovery Guide placeholder cover</title>
+  <desc id="description">Purple and gold placeholder cover for the upcoming digital recovery guide.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#160d1d"/>
+      <stop offset="0.55" stop-color="#321548"/>
+      <stop offset="1" stop-color="#120817"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b88742"/>
+      <stop offset="0.5" stop-color="#f3dd9d"/>
+      <stop offset="1" stop-color="#a76f2b"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="960" fill="url(#background)"/>
+  <rect x="30" y="30" width="660" height="900" rx="12" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  <path d="M90 160h170M460 160h170" stroke="url(#gold)" stroke-width="2"/>
+  <text x="360" y="145" fill="#ead39a" font-family="Georgia, serif" font-size="28" text-anchor="middle" letter-spacing="5">THE</text>
+  <text x="360" y="220" fill="#f0dca7" font-family="Georgia, serif" font-size="60" text-anchor="middle">DIVA'S CARE</text>
+  <text x="360" y="270" fill="#d8a7e8" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" letter-spacing="6">DIGITAL EDITION</text>
+  <path d="M120 320h480" stroke="#c59855" stroke-width="2"/>
+  <text x="360" y="430" fill="#fffaf5" font-family="Georgia, serif" font-size="62" font-weight="700" text-anchor="middle">YOUR POST-OP</text>
+  <text x="360" y="510" fill="#fffaf5" font-family="Georgia, serif" font-size="62" font-weight="700" text-anchor="middle">RECOVERY GUIDE</text>
+  <text x="360" y="590" fill="#d8a7e8" font-family="Arial, sans-serif" font-size="23" text-anchor="middle" letter-spacing="2">KNOW • PREPARE • RECOVER • THRIVE</text>
+  <rect x="145" y="675" width="430" height="92" rx="46" fill="#7c3aed" opacity="0.88"/>
+  <text x="360" y="731" fill="#ffffff" font-family="Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle" letter-spacing="3">COVER COMING SOON</text>
+  <text x="360" y="855" fill="#ead39a" font-family="Georgia, serif" font-size="24" text-anchor="middle">Education empowers your recovery.</text>
+</svg>

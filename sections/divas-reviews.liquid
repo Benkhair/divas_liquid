@@ -1,0 +1,325 @@
+{%- comment -%}
+  Divas Care — React-style reviews carousel
+  Hardcoded reviews matching the React app design.
+{%- endcomment -%}
+
+{%- capture reviews_json -%}
+[
+  {
+    "name": "Tia Carter",
+    "time": "3 months ago",
+    "avatar": "T",
+    "avatar_color": "#1565c0",
+    "image": "",
+    "text": "I had the pleasure of having Lateria care for me after my surgery, and I couldn't have asked for a better caregiver. She was incredibly kind, compassionate, patient, and attentive to all of my needs."
+  },
+  {
+    "name": "Dior Chanel",
+    "time": "3 months ago",
+    "avatar": "D",
+    "avatar_color": "#e91e63",
+    "image": "",
+    "text": "She the best hands down. I could recommend her any day. I love her she care about you more than the money. Once again I appreciate her services"
+  },
+  {
+    "name": "Shantrice H",
+    "time": "5 months ago",
+    "avatar": "S",
+    "avatar_color": "#5c6bc0",
+    "image": "",
+    "text": "I would definitely recommend 1000/10. Lateria is heaven sent. I got in contact with her last minute she was able to still accommodate me and was very professional."
+  },
+  {
+    "name": "Nichole",
+    "time": "last year",
+    "avatar": "",
+    "avatar_color": "#fff",
+    "image": "https://randomuser.me/api/portraits/women/44.jpg",
+    "text": "Very personable & well versed in cosmetic surgery. Lateria made me feel comfortable throughout the whole process of my BBL. Best massage I ever had."
+  }
+]
+{%- endcapture -%}
+
+{%- assign reviews = reviews_json | json_parse -%}
+
+<section class="divas-reviews-section" data-section-id="{{ section.id }}" data-section-type="divas-reviews">
+  <div class="page-width">
+    <h2 class="divas-reviews__title">{{ section.settings.title | escape }}</h2>
+
+    <div class="divas-reviews__wrapper">
+      <button class="divas-reviews__arrow divas-reviews__arrow--left" aria-label="Previous review">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="divas-reviews__track" data-reviews-track>
+        {%- for review in reviews -%}
+          <article class="divas-review-card">
+            <div class="divas-review-card__header">
+              {%- if review.image != blank -%}
+                <div class="divas-review-card__avatar divas-review-card__avatar--image" style="background-image: url('{{ review.image | escape }}');"></div>
+              {%- else -%}
+                <div class="divas-review-card__avatar" style="background-color: {{ review.avatar_color | escape }};">
+                  {{ review.avatar | escape }}
+                </div>
+              {%- endif -%}
+              <div class="divas-review-card__meta">
+                <h3>{{ review.name | escape }}</h3>
+                <p>{{ review.time | escape }}</p>
+              </div>
+              <img class="divas-review-card__google" src="https://www.google.com/favicon.ico" alt="Google" width="22" height="22">
+            </div>
+
+            <div class="divas-review-card__stars">
+              {%- for i in (1..5) -%}
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              {%- endfor -%}
+              <span class="divas-review-card__verified">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1d9bf0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </span>
+            </div>
+
+            <p class="divas-review-card__text">{{ review.text | escape }}</p>
+          </article>
+        {%- endfor -%}
+      </div>
+
+      <button class="divas-reviews__arrow divas-reviews__arrow--right" aria-label="Next review">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .divas-reviews-section {
+    background: var(--divas-bg, #1e1229);
+    padding: 78px 24px 84px;
+  }
+
+  .divas-reviews-section .page-width {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .divas-reviews__title {
+    font-family: var(--divas-font, 'Poppins', sans-serif);
+    font-size: clamp(34px, 4vw, 52px);
+    font-weight: 400;
+    color: var(--divas-text-primary, #fffaf5);
+    text-align: center;
+    margin: 0 0 32px;
+  }
+
+  .divas-reviews__wrapper {
+    position: relative;
+  }
+
+  .divas-reviews__track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 10px 0;
+    margin: 0 60px;
+  }
+
+  .divas-reviews__track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .divas-review-card {
+    min-width: 280px;
+    max-width: 280px;
+    flex-shrink: 0;
+    background: var(--divas-surface, rgba(40, 22, 56, 0.8));
+    border: 1px solid var(--divas-line, rgba(215, 185, 229, 0.18));
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: var(--divas-card-shadow, 0 10px 24px rgba(0, 0, 0, 0.35));
+    transition: all 0.3s ease;
+  }
+
+  .divas-review-card:hover {
+    border-color: rgba(124, 58, 237, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.25);
+  }
+
+  .divas-review-card__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .divas-review-card__avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .divas-review-card__avatar--image {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .divas-review-card__meta h3 {
+    font-family: var(--divas-font, 'Poppins', sans-serif);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--divas-text-primary, #fffaf5);
+    margin: 0;
+  }
+
+  .divas-review-card__meta p {
+    font-size: 12px;
+    color: var(--divas-text-label, #d7b9e5);
+    margin: 0;
+  }
+
+  .divas-review-card__google {
+    width: 22px;
+    height: 22px;
+    margin-left: auto;
+  }
+
+  .divas-review-card__stars {
+    color: #fbbf24;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .divas-review-card__verified {
+    margin-left: 4px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .divas-review-card__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--divas-text-body, #ead9f2);
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .divas-reviews__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.5);
+  }
+
+  .divas-reviews__arrow:hover {
+    background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+    transform: translateY(-50%) scale(1.15);
+    box-shadow: 0 6px 25px rgba(124, 58, 237, 0.7);
+  }
+
+  .divas-reviews__arrow--left {
+    left: 0;
+  }
+
+  .divas-reviews__arrow--right {
+    right: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .divas-reviews__track {
+      margin: 0 40px;
+    }
+
+    .divas-reviews__arrow {
+      width: 40px;
+      height: 40px;
+    }
+
+    .divas-review-card {
+      min-width: 260px;
+      max-width: 260px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var section = document.querySelector('[data-section-id="{{ section.id }}"]');
+    if (!section) return;
+
+    var track = section.querySelector('[data-reviews-track]');
+    var leftBtn = section.querySelector('.divas-reviews__arrow--left');
+    var rightBtn = section.querySelector('.divas-reviews__arrow--right');
+    if (!track || !leftBtn || !rightBtn) return;
+
+    var cardWidth = 300;
+
+    leftBtn.addEventListener('click', function () {
+      track.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+    });
+
+    rightBtn.addEventListener('click', function () {
+      var maxScroll = track.scrollWidth - track.clientWidth;
+      if (track.scrollLeft >= maxScroll - cardWidth) {
+        track.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        track.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Divas Reviews Carousel",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title",
+      "default": "What Our Clients Say"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Divas Reviews Carousel",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}

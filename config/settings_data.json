@@ -1,0 +1,781 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "color_text": "#3A3A3A",
+    "color_text_field": "#ffffff",
+    "color_image_overlay": "#ffffff",
+    "color_body_bg": "#31193E",
+    "type_header_font": "poppins_n7",
+    "favicon": "shopify://shop_images/IMG_2049.png",
+    "sections": {
+      "header": {
+        "type": "header",
+        "custom_css": [
+          ".site-header__logo {font-size: 20px; color: #fffaf5;}",
+          ".site-nav__link {font-size: 16px; color: #fffaf5; font-weight: 500;}",
+          ".site-nav li {margin-left: 1px;}"
+        ],
+        "settings": {
+          "align_logo": "left",
+          "logo_max_width": 100,
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": false,
+          "message_text": "Mobile Service Only!",
+          "message_link": "",
+          "color_bg": "#3a3a3a",
+          "color_text": "#ffffff"
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify://shop_images/14.png",
+          "layout": "left",
+          "title": "",
+          "text": "",
+          "button_label": "Book Your Care Session",
+          "button_link": "https://thedivascarellc.as.me/"
+        }
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "blocks": {
+          "feature-columns-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify://shop_images/yy.jpg",
+              "title": "Wood Therapy",
+              "text": "<p>Wood therapy is <strong>a vigorous massage technique that utilizes wooden, handheld tools</strong>, such as rolling pins and vacuum-suction cups. ... Madera is Spanish for wood. Practitioners of this technique claim that it can reduce or eliminate cellulite. Other purported claims include: increasing lymphatic circulation.<br/><br/></p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "feature-columns-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify://shop_images/ii.jpg",
+              "title": "Vacuum Therapy",
+              "text": "<p>Vacuum therapy is <strong>a noninvasive massaging technique that helps to lift your skin via a mechanical device equipped with suction cups</strong>. While it originally entered the market during the 1970s as a way to help treat burn scars, this treatment has evolved into a nonsurgical butt lift method.<br/><br/></p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "feature-columns-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify://shop_images/pp.jpg",
+              "title": "Lymphatic Drainage",
+              "text": "<p>Manual lymphatic drainage is a type of massage based on the hypothesis that it will encourage the natural drainage of the lymph, which carries waste products away from the tissues back toward the heart.<br/><br/></p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "feature-columns-0",
+          "feature-columns-1",
+          "feature-columns-2"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "settings": {
+          "title": "Our Services",
+          "collection": "",
+          "grid": 4,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "hero-2": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify://shop_images/Bikinis-2020-Women-Thong-Bikinis-Set-becket-bandage-letter-black-Push-up-Bra-Bathing-Suit-G.jpg_q50.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "large",
+          "title": "Great Results Without Any Runaround!",
+          "text": "<p><br/>This process works immediately and works well with a good discipline of weight loss.<br/><br/></p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "blocks": {
+          "quotes-0": {
+            "type": "quote",
+            "settings": {}
+          },
+          "quotes-1": {
+            "type": "quote",
+            "settings": {}
+          },
+          "quotes-2": {
+            "type": "quote",
+            "settings": {}
+          }
+        },
+        "block_order": [
+          "quotes-0",
+          "quotes-1",
+          "quotes-2"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "image-bar": {
+        "type": "image-bar",
+        "blocks": {
+          "image-bar-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-1": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-2": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "image-bar-0",
+          "image-bar-1",
+          "image-bar-2"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer-1": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "color_footer_bg": "#d064f5",
+          "color_footer_text": "#190121",
+          "show_currency_selector": true,
+          "show_locale_selector": true
+        }
+      },
+      "162750537361475533": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify://shop_images/10_2.png",
+          "layout": "left",
+          "title": "",
+          "text": "",
+          "button_label": "General Waiver",
+          "button_link": "https://cdn.shopify.com/s/files/1/0588/3691/0250/files/Copy_of_thedivascarellcgeneralliabilitywaiver_2.pdf?v=1709086956"
+        }
+      },
+      "1627505556014e6d50": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify://shop_images/11_2.png",
+          "layout": "left",
+          "title": "",
+          "text": "",
+          "button_label": "Upload Your Selfie",
+          "button_link": "https://www.instagram.com/thedivascare/"
+        }
+      },
+      "162755417841fa8aa4": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify://shop_images/12_2.png",
+          "layout": "left",
+          "title": "",
+          "text": "",
+          "button_label": "Click Here To Book",
+          "button_link": "https://the-divas-care-llc.square.site"
+        }
+      },
+      "162755421969b94743": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify://shop_images/225_1.png",
+          "layout": "left",
+          "title": "",
+          "text": "",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "16275542799ac807cb": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify://shop_images/15.png",
+          "layout": "left",
+          "title": "",
+          "text": "",
+          "button_label": "Consent Form",
+          "button_link": "https://cdn.shopify.com/s/files/1/0588/3691/0250/files/Copy_of_thedivascarellcgeneralliabilitywaiver_1.pdf?v=1709086182"
+        }
+      },
+      "162755437284a3a615": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify://shop_images/222.png",
+          "layout": "left",
+          "title": "",
+          "text": "",
+          "button_label": "Book Now",
+          "button_link": "https://squareup.com/appointments/book/e8mdy5m27be1ya/L8GMK8BF2YTGR/services"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 2,
+          "rows": 2,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "166083187887aac920": {
+        "type": "collection-list",
+        "blocks": {
+          "166083187887aac920-0": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "gummy-s"
+            }
+          }
+        },
+        "block_order": [
+          "166083187887aac920-0"
+        ],
+        "settings": {
+          "title": "OUR PRODUCTS",
+          "grid": 2
+        }
+      },
+      "video_KxcyTn": {
+        "type": "video",
+        "settings": {
+          "image_asset": "1.webp",
+          "image": "",
+          "image_position": "center center",
+          "video_link": "https://www.youtube.com/watch?v=_GKRkLASmBg",
+          "show_overlay": true,
+          "style": "image_with_play",
+          "height": "medium",
+          "video_title": "Start Your Journey",
+          "text_size": "medium"
+        }
+      },
+      "rich_text_JDVUxa": {
+        "type": "rich-text",
+        "settings": {
+          "full_width": false,
+          "section_title": "ALL SALES FINAL!",
+          "text": "",
+          "text_size": "large"
+        }
+      },
+      "feature_row_HEbwb4": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify://shop_images/THE_DIVAS_CARE_Ultimate_Surgeons_List2025.pdf_913840d1-3385-43b2-8166-8997b43c2f8c.png",
+          "layout": "left",
+          "title": "💎 Ready to Choose the Right Surgeon with Confidence?",
+          "text": "<p>Don’t leave your body in the hands of just <em>anyone.</em><br/><br/>Get the <strong>Ultimate Surgeons List 2025</strong> and unlock direct access to the world’s top cosmetic surgeons—trusted by influencers, celebrities, and real women just like you.</p><p>🎯 Instant Download<br/><br/>📲 Verified Surgeon Contacts<br/><br/>💋 Curated by a Post-Op Expert Who’s Been There</p><p><strong>This is your glow-up guide.</strong><br/><br/>Grab your copy today and take the first step toward the transformation you deserve.</p><p>👉 <strong>[ Get the Book Now – Just $19.99 ]</strong></p>",
+          "button_label": "Buy Now",
+          "button_link": "shopify://pages/thebook"
+        }
+      },
+      "feature_row_tGmVRC": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify://shop_images/THE_DIVAS_CARE_Ultimate_Surgeons_List2025_BlackBookEdition.pdf_56dfa964-86fd-48de-ac52-0165e6410c5a.png",
+          "layout": "left",
+          "title": "💎 Black Book Edition With The #1 Surgeon In The World",
+          "text": "<p>Your body deserves the best hands in <em>business.</em><br/><br/>Get the <strong>Black Book Edition</strong> and unlock direct access to the world’s #1 cosmetic surgeons—trusted by influencers, celebrities, and real women just like you.</p><p>🎯 Instant Download<br/><br/>📲 Verified Surgeon Contacts<br/><br/>💋 Curated by a Post-Op Expert Who’s Been There</p><p><strong>This is your glow-up guide.</strong><br/><br/>Get your copy of the Black Book Edition and make the transformation you deserve.</p><p>👉 <strong>[ Black Book Edition Now – Just $49.99 ]</strong></p>",
+          "button_label": "Buy Now",
+          "button_link": "shopify://products/black-book-edition-surgeons-list-2025"
+        }
+      },
+      "divas_intro": {
+        "type": "divas-intro",
+        "settings": {
+          "eyebrow": "What is Divas Care?",
+          "title": "Care that moves with you.",
+          "text": "<p>We bring calm, confidence, and expert post-op support to the moments that matter most. Your transformation deserves to feel just as good as it looks.</p>",
+          "background_color": "#31193E",
+          "text_color": "#FFFFFF"
+        }
+      },
+      "judgeme_carousel_home": {
+        "type": "judgeme_carousel_section",
+        "settings": {
+          "maxwidth": 1200
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_ajax_enable": true,
+          "cart_notes_enable": false
+        }
+      }
+    },
+    "content_for_index": [
+      "divas_intro",
+      "video_KxcyTn",
+      "feature_row_HEbwb4",
+      "feature_row_tGmVRC",
+      "162750537361475533",
+      "hero-2",
+      "166083187887aac920",
+      "162755417841fa8aa4",
+      "feature-row",
+      "16275542799ac807cb",
+      "162755421969b94743",
+      "1627505556014e6d50",
+      "162755437284a3a615",
+      "feature-columns",
+      "judgeme_carousel_home",
+      "rich_text_JDVUxa"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero-1": {
+          "type": "hero",
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-1": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-2": {
+              "type": "text_block",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "grid": 4
+          }
+        },
+        "hero-2": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "quotes": {
+          "type": "quotes",
+          "blocks": {
+            "quotes-0": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-1": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-2": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "image-bar": {
+          "type": "image-bar",
+          "blocks": {
+            "image-bar-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-1": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-2": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ],
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "footer-1": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  },
+  "platform_customizations": {
+    "custom_css": []
+  }
+}
