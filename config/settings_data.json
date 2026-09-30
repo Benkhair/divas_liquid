@@ -309,7 +309,7 @@
         "type": "video",
         "settings": {
           "image_asset": "1.webp",
-          "image": "",
+          "image": "shopify://shop_images/divas-logo.jpg",
           "image_position": "center center",
           "video_link": "https://www.youtube.com/watch?v=_GKRkLASmBg",
           "show_overlay": true,
@@ -355,9 +355,7 @@
         "settings": {
           "eyebrow": "What is Divas Care?",
           "title": "Care that moves with you.",
-          "text": "<p>We bring calm, confidence, and expert post-op support to the moments that matter most. Your transformation deserves to feel just as good as it looks.</p>",
-          "background_color": "#31193E",
-          "text_color": "#FFFFFF"
+          "text": "<p>We bring calm, confidence, and expert post-op support to the moments that matter most. Your transformation deserves to feel just as good as it looks.</p>"
         }
       },
       "judgeme_carousel_home": {
