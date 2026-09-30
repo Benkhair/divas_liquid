@@ -254,9 +254,9 @@
         "type": "collection-template",
         "settings": {
           "layout": "grid",
-          "grid": 2,
+          "grid": 4,
           "rows": 2,
-          "show_collection_image": true,
+          "show_collection_image": false,
           "show_vendor": false,
           "sort_enable": true,
           "tags_enable": true
@@ -464,23 +464,27 @@
           "image_xAVpMJ",
           "image_3xXyGG"
         ],
+        "custom_css": [],
         "name": "Slideshow",
         "settings": {
           "slideshow_height": "adapt",
-          "text_size": "medium",
+          "text_size": "large",
           "text_alignment": "center center",
-          "show_overlay": true,
-          "autorotate": false,
-          "autorotate_speed": 5
+          "show_overlay": false,
+          "autorotate": true,
+          "autorotate_speed": 3
         }
       },
       "rich_text_Q8wE64": {
         "type": "rich-text",
+        "custom_css": [
+          ".grid__item {font-size: 18px;}"
+        ],
         "name": "Rich text",
         "settings": {
           "full_width": false,
           "section_title": "",
-          "text": "<h1>Great Results Without Any Runaround</h1>",
+          "text": "<p>REAL TRANSFORMATIONS</p><h1>Great Results Without Any Runaround</h1>",
           "text_size": "large"
         }
       }
