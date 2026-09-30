@@ -216,7 +216,7 @@
           "layout": "left",
           "title": "",
           "text": "",
-          "button_label": "General Waiver",
+          "button_label": "View & Sign Waiver",
           "button_link": "https://cdn.shopify.com/s/files/1/0588/3691/0250/files/Copy_of_thedivascarellcgeneralliabilitywaiver_2.pdf?v=1709086956"
         }
       },
@@ -331,10 +331,10 @@
       "feature_row_HEbwb4": {
         "type": "feature-row",
         "settings": {
-          "image": "shopify://shop_images/THE_DIVAS_CARE_Ultimate_Surgeons_List2025.pdf_913840d1-3385-43b2-8166-8997b43c2f8c.png",
+          "image": "shopify://shop_images/finalbookcover1.webp",
           "layout": "left",
-          "title": "💎 Ready to Choose the Right Surgeon with Confidence?",
-          "text": "<p>Don’t leave your body in the hands of just <em>anyone.</em><br/><br/>Get the <strong>Ultimate Surgeons List 2025</strong> and unlock direct access to the world’s top cosmetic surgeons—trusted by influencers, celebrities, and real women just like you.</p><p>🎯 Instant Download<br/><br/>📲 Verified Surgeon Contacts<br/><br/>💋 Curated by a Post-Op Expert Who’s Been There</p><p><strong>This is your glow-up guide.</strong><br/><br/>Grab your copy today and take the first step toward the transformation you deserve.</p><p>👉 <strong>[ Get the Book Now – Just $19.99 ]</strong></p>",
+          "title": "Ultimate Surgeons List 2025",
+          "text": "<p>Don’t leave your body in the hands of just <em>anyone.</em><br/><br/>Get the <strong>Ultimate Surgeons List 2025</strong> and unlock direct access to the world’s top cosmetic surgeons—trusted by influencers, celebrities, and real women just like you.</p><p>🎯 Instant Download<br/><br/>📲 Verified Surgeon Contacts<br/><br/>💋 Curated by a Post-Op Expert Who’s Been There</p><p><strong>This is your glow-up guide.</strong><br/><br/>Grab your copy today and take the first step toward the transformation you deserve.</p><p>👉 <strong>[ Get the Book Now – Just $19.99 ]</strong></p><p></p>",
           "button_label": "Buy Now",
           "button_link": "shopify://pages/thebook"
         }
@@ -342,9 +342,9 @@
       "feature_row_tGmVRC": {
         "type": "feature-row",
         "settings": {
-          "image": "shopify://shop_images/THE_DIVAS_CARE_Ultimate_Surgeons_List2025_BlackBookEdition.pdf_56dfa964-86fd-48de-ac52-0165e6410c5a.png",
+          "image": "shopify://shop_images/black-book-edition.webp",
           "layout": "left",
-          "title": "💎 Black Book Edition With The #1 Surgeon In The World",
+          "title": "Black Book Edition With The #1 Surgeon In The World",
           "text": "<p>Your body deserves the best hands in <em>business.</em><br/><br/>Get the <strong>Black Book Edition</strong> and unlock direct access to the world’s #1 cosmetic surgeons—trusted by influencers, celebrities, and real women just like you.</p><p>🎯 Instant Download<br/><br/>📲 Verified Surgeon Contacts<br/><br/>💋 Curated by a Post-Op Expert Who’s Been There</p><p><strong>This is your glow-up guide.</strong><br/><br/>Get your copy of the Black Book Edition and make the transformation you deserve.</p><p>👉 <strong>[ Black Book Edition Now – Just $49.99 ]</strong></p>",
           "button_label": "Buy Now",
           "button_link": "shopify://products/black-book-edition-surgeons-list-2025"
@@ -370,6 +370,82 @@
           "cart_ajax_enable": true,
           "cart_notes_enable": false
         }
+      },
+      "custom_content_xynMfX": {
+        "type": "custom-content",
+        "blocks": {
+          "image_iNyaFz": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/diva.webp",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "image_QprCWC": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/consentform.webp",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "text_8BAqgi": {
+            "type": "text",
+            "settings": {
+              "title": "General Waiver",
+              "text": "<p>Liability waiver covering your post-op care session. Required for all clients</p>",
+              "width": "50%",
+              "alignment": "top-middle",
+              "align_text": "left"
+            }
+          },
+          "text_P34rKp": {
+            "type": "text",
+            "settings": {
+              "title": "Lymphatic Intake Form",
+              "text": "<p>Share your health and surgery details so our care team can prepare a safer, more personalized session.<br/><br/></p>",
+              "width": "50%",
+              "alignment": "top-middle",
+              "align_text": "left"
+            }
+          }
+        },
+        "block_order": [
+          "image_iNyaFz",
+          "image_QprCWC",
+          "text_8BAqgi",
+          "text_P34rKp"
+        ],
+        "custom_css": [],
+        "name": "Custom content",
+        "settings": {
+          "title": "Complete your forms"
+        }
+      },
+      "feature_row_yhHWUf": {
+        "type": "feature-row",
+        "name": "Image with text",
+        "settings": {
+          "image": "shopify://shop_images/divas-logo.jpg",
+          "layout": "left",
+          "title": "General Waiver",
+          "text": "<p>Liability waiver covering your post-op care session. Required for all clients</p>",
+          "button_label": "View and Sign Waiver",
+          "button_link": "https://cdn.shopify.com/s/files/1/0588/3691/0250/files/Copy_of_thedivascarellcgeneralliabilitywaiver_2.pdf?v=1709086956"
+        }
+      },
+      "feature_row_JmqRai": {
+        "type": "feature-row",
+        "name": "Image with text",
+        "settings": {
+          "image": "shopify://shop_images/consentform.webp",
+          "layout": "left",
+          "title": "General Waiver",
+          "text": "<p>Liability waiver covering your post-op care session. Required for all clients</p>",
+          "button_label": "Start Intake Form",
+          "button_link": "https://cdn.shopify.com/s/files/1/0588/3691/0250/files/Copy_of_thedivascarellcgeneralliabilitywaiver_1.pdf?v=1709086182"
+        }
       }
     },
     "content_for_index": [
@@ -377,6 +453,9 @@
       "video_KxcyTn",
       "feature_row_HEbwb4",
       "feature_row_tGmVRC",
+      "custom_content_xynMfX",
+      "feature_row_yhHWUf",
+      "feature_row_JmqRai",
       "162750537361475533",
       "hero-2",
       "166083187887aac920",
