@@ -1,13 +1,13 @@
-<div class="page-width feature-row">
+<div class="feature-row feature-row--full" id="FeatureRow-{{ section.id }}">
   {% capture image_layout %}
-    <div class="feature-row__item">
+    <div class="feature-row__media">
       {% if section.settings.image != blank %}
         {% capture img_id %}FeatureRowImage-{{ section.id }}{% endcapture %}
         {% capture wrapper_id %}FeatureRowImageWrapper-{{ section.id }}{% endcapture %}
         {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
         {% include 'image-style', image: section.settings.image, height: 545, wrapper_id: wrapper_id, img_id: img_id %}
         <div id="{{ wrapper_id }}" class="feature-row__image-wrapper js">
-          <div style="padding-top:{{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100}}%;" data-image-loading-animation>
+          <div class="feature-row__image-aspect" data-image-loading-animation>
             <img id="{{ img_id }}"
                  class="feature-row__image lazyload"
                  data-src="{{ img_url }}"
@@ -27,36 +27,38 @@
     </div>
   {% endcapture %}
 
-  <div class="feature-row">
+  <div class="feature-row__inner">
     {% if section.settings.layout == 'left' %}
       {{ image_layout }}
     {% endif %}
 
-    <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }}">
-      {% if section.settings.title != blank %}
-        <h2 class="h3">{{ section.settings.title | escape }}</h2>
-      {% endif %}
-      {% if section.settings.text != blank %}
-        <div class="rte rte-setting featured-row__subtext">{{ section.settings.text }}</div>
-      {% endif %}
-      {% if section.settings.button_label != blank and section.settings.button_link != blank %}
-        {%- capture ariaLabel -%}
-          {{- section.settings.button_label -}}
-          {%- if section.settings.button_link.type == 'frontpage_link' -%}
-            : {{ 'homepage.general.title' | t -}}
-          {%- elsif section.settings.button_link.type == 'catalog_link' -%}
-            : {{ 'collections.catalog.title' | t -}}
-          {%- elsif section.settings.button_link.object.title -%}
-            : {{ section.settings.button_link.object.title -}}
-          {%- endif -%}
-        {%- endcapture -%}
+    <div class="feature-row__content feature-row__content--{{ section.settings.layout }}">
+      <div class="feature-row__text-wrap">
+        {% if section.settings.title != blank %}
+          <h2 class="feature-row__title">{{ section.settings.title | escape }}</h2>
+        {% endif %}
+        {% if section.settings.text != blank %}
+          <div class="feature-row__subtext rte rte-setting">{{ section.settings.text }}</div>
+        {% endif %}
+        {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+          {%- capture ariaLabel -%}
+            {{- section.settings.button_label -}}
+            {%- if section.settings.button_link.type == 'frontpage_link' -%}
+              : {{ 'homepage.general.title' | t -}}
+            {%- elsif section.settings.button_link.type == 'catalog_link' -%}
+              : {{ 'collections.catalog.title' | t -}}
+            {%- elsif section.settings.button_link.object.title -%}
+              : {{ section.settings.button_link.object.title -}}
+            {%- endif -%}
+          {%- endcapture -%}
 
-        <a href="{{ section.settings.button_link }}"
-          class="btn"
-          aria-label="{{ ariaLabel }}">
-          {{- section.settings.button_label | escape -}}
-        </a>
-      {% endif %}
+          <a href="{{ section.settings.button_link }}"
+             class="feature-row__btn btn"
+             aria-label="{{ ariaLabel }}">
+            {{- section.settings.button_label | escape -}}
+          </a>
+        {% endif %}
+      </div>
     </div>
 
     {% if section.settings.layout == 'right' %}
@@ -65,7 +67,122 @@
   </div>
 </div>
 
+{% stylesheet %}
+.feature-row--full {
+  width: 100%;
+  background: linear-gradient(135deg, #1a0b25 0%, #2d1240 50%, #1a0b25 100%);
+  padding: 80px 0;
+}
 
+.feature-row__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 60px;
+  padding: 0 24px;
+}
+
+.feature-row__media {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.feature-row__image-aspect {
+  position: relative;
+  padding-top: 60%;
+}
+
+.feature-row__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.feature-row--full:hover .feature-row__image {
+  transform: scale(1.03);
+}
+
+.feature-row__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-row__content--left {
+  order: 2;
+}
+
+.feature-row__content--right {
+  order: 2;
+}
+
+.feature-row__text-wrap {
+  text-align: center;
+  max-width: 480px;
+}
+
+.feature-row__title {
+  margin: 0 0 18px;
+  color: #fff;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.feature-row__subtext {
+  margin: 0 0 32px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.6;
+}
+
+.feature-row__btn {
+  display: inline-block;
+  padding: 16px 36px;
+  border-radius: 999px;
+  background: #d8a7e8;
+  color: #1a0b25;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  box-shadow: 0 8px 24px rgba(216, 167, 232, 0.35);
+}
+
+.feature-row__btn:hover {
+  transform: translateY(-3px);
+  background: #e8c4f4;
+  box-shadow: 0 12px 32px rgba(216, 167, 232, 0.5);
+}
+
+@media only screen and (max-width: 749px) {
+  .feature-row__inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 0 18px;
+  }
+
+  .feature-row__content {
+    order: 2;
+  }
+
+  .feature-row__media {
+    order: 1;
+  }
+}
+{% endstylesheet %}
 
 {% schema %}
 {
