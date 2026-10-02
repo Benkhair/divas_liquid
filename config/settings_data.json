@@ -417,6 +417,16 @@
           "text": "<p>REAL TRANSFORMATIONS</p><h1>Great Results Without Any Runaround</h1>",
           "text_size": "large"
         }
+      },
+      "rich_text_dpwqHi": {
+        "type": "rich-text",
+        "name": "Rich text",
+        "settings": {
+          "full_width": false,
+          "section_title": "Complete Your Forms",
+          "text": "<p>Please fill out both forms prior to your appointment to ensure a smooth experience.</p>",
+          "text_size": "medium"
+        }
       }
     },
     "content_for_index": [
@@ -424,6 +434,7 @@
       "video_KxcyTn",
       "feature_row_HEbwb4",
       "feature_row_tGmVRC",
+      "rich_text_dpwqHi",
       "feature_row_yhHWUf",
       "feature_row_JmqRai",
       "rich_text_Q8wE64",
