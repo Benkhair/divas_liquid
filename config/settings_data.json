@@ -39,9 +39,9 @@
         "type": "feature-row",
         "settings": {
           "image": "shopify://shop_images/14.png",
-          "layout": "left",
-          "title": "",
-          "text": "",
+          "layout": "right",
+          "title": "Need a Care Session?",
+          "text": "<p>Explore our recovery services, consultation details, pricing, and care-session options.<br/><br/></p>",
           "button_label": "Book Your Care Session",
           "button_link": "https://thedivascarellc.as.me/"
         }
@@ -212,8 +212,8 @@
         "settings": {
           "image": "shopify://shop_images/12_2.png",
           "layout": "left",
-          "title": "",
-          "text": "",
+          "title": "Schedule Your Appointment.",
+          "text": "<p>View available appointments and reserve your preferred service through our secure booking site.<br/><br/></p>",
           "button_label": "Click Here To Book",
           "button_link": "https://the-divas-care-llc.square.site"
         }
@@ -227,17 +227,6 @@
           "text": "",
           "button_label": "",
           "button_link": ""
-        }
-      },
-      "16275542799ac807cb": {
-        "type": "feature-row",
-        "settings": {
-          "image": "shopify://shop_images/15.png",
-          "layout": "left",
-          "title": "",
-          "text": "",
-          "button_label": "Consent Form",
-          "button_link": "https://cdn.shopify.com/s/files/1/0588/3691/0250/files/Copy_of_thedivascarellcgeneralliabilitywaiver_1.pdf?v=1709086182"
         }
       },
       "162755437284a3a615": {
@@ -347,58 +336,6 @@
           "cart_notes_enable": false
         }
       },
-      "custom_content_xynMfX": {
-        "type": "custom-content",
-        "blocks": {
-          "image_iNyaFz": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/diva.webp",
-              "width": "50%",
-              "alignment": "center"
-            }
-          },
-          "image_QprCWC": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/consentform.webp",
-              "width": "50%",
-              "alignment": "center"
-            }
-          },
-          "text_8BAqgi": {
-            "type": "text",
-            "settings": {
-              "title": "General Waiver",
-              "text": "<p>Liability waiver covering your post-op care session. Required for all clients</p>",
-              "width": "50%",
-              "alignment": "top-middle",
-              "align_text": "left"
-            }
-          },
-          "text_P34rKp": {
-            "type": "text",
-            "settings": {
-              "title": "Lymphatic Intake Form",
-              "text": "<p>Share your health and surgery details so our care team can prepare a safer, more personalized session.<br/><br/></p>",
-              "width": "50%",
-              "alignment": "top-middle",
-              "align_text": "left"
-            }
-          }
-        },
-        "block_order": [
-          "image_iNyaFz",
-          "image_QprCWC",
-          "text_8BAqgi",
-          "text_P34rKp"
-        ],
-        "custom_css": [],
-        "name": "Custom content",
-        "settings": {
-          "title": "Complete your forms"
-        }
-      },
       "feature_row_yhHWUf": {
         "type": "feature-row",
         "name": "Image with text",
@@ -495,7 +432,6 @@
       "video_KxcyTn",
       "feature_row_HEbwb4",
       "feature_row_tGmVRC",
-      "custom_content_xynMfX",
       "feature_row_yhHWUf",
       "feature_row_JmqRai",
       "rich_text_Q8wE64",
@@ -503,7 +439,6 @@
       "166083187887aac920",
       "162755417841fa8aa4",
       "feature-row",
-      "16275542799ac807cb",
       "162755421969b94743",
       "1627505556014e6d50",
       "162755437284a3a615",
