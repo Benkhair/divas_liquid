@@ -208,6 +208,7 @@
       },
       "162755417841fa8aa4": {
         "type": "feature-row",
+        "custom_css": [],
         "settings": {
           "image": "shopify://shop_images/12_2.png",
           "layout": "left",
