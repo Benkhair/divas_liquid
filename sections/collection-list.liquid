@@ -16,7 +16,7 @@
       {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
   {% endcase %}
 
-  <div class="collection-grid">
+  <div class="collection-grid collection-grid--centered">
     <ul class="grid grid--uniform">
       {% for block in section.blocks limit: section.blocks.size %}
         <li class="grid__item {{ grid_item_width }}" {{ block.shopify_attributes }}>
@@ -32,7 +32,67 @@
   {% endif %}
 </div>
 
+{% stylesheet %}
+  .collection-grid--centered {
+    margin-top: 30px;
+  }
 
+  .collection-grid--centered .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-left: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .collection-grid--centered .grid__item {
+    float: none;
+    padding-left: 0;
+    flex: 0 1 auto;
+    max-width: 360px;
+  }
+
+  .collection-grid--centered .collection-grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  .collection-grid--centered .collection-grid-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.18);
+  }
+
+  .collection-grid--centered .collection-grid-item__image {
+    width: 100%;
+    display: block;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .collection-grid--centered .collection-grid-item:hover .collection-grid-item__image {
+    transform: scale(1.05);
+  }
+
+  .collection-grid--centered .collection-grid-item__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  }
+{% endstylesheet %}
 
 {% schema %}
 {
