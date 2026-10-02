@@ -200,8 +200,8 @@
         "settings": {
           "image": "shopify://shop_images/11_2.png",
           "layout": "left",
-          "title": "",
-          "text": "",
+          "title": "Send Us Your Bomb Selfies",
+          "text": "<p>Let other Divas see your before and after pictures of care. Show off your transformation and inspire others on their recovery journey.</p><p>We love celebrating your results! Tag us or upload directly and get featured on our page.</p>",
           "button_label": "Upload Your Selfie",
           "button_link": "https://www.instagram.com/thedivascare/"
         }
@@ -218,24 +218,16 @@
           "button_link": "https://the-divas-care-llc.square.site"
         }
       },
-      "162755421969b94743": {
-        "type": "feature-row",
-        "settings": {
-          "image": "shopify://shop_images/225_1.png",
-          "layout": "left",
-          "title": "",
-          "text": "",
-          "button_label": "",
-          "button_link": ""
-        }
-      },
       "162755437284a3a615": {
         "type": "feature-row",
+        "custom_css": [
+          ".featured-row__subtext {color: white;}"
+        ],
         "settings": {
           "image": "shopify://shop_images/222.png",
           "layout": "left",
-          "title": "",
-          "text": "",
+          "title": "Self Care Looks Good On You",
+          "text": "<ul><li>Wood Therapy</li><li>Lymphatic Massage</li><li>Post-Op Care</li><li>Skin Tightening</li><li>Ultrasound Cavitation</li><li>And So Much More</li></ul>",
           "button_label": "Book Now",
           "button_link": "https://squareup.com/appointments/book/e8mdy5m27be1ya/L8GMK8BF2YTGR/services"
         }
@@ -439,7 +431,6 @@
       "166083187887aac920",
       "162755417841fa8aa4",
       "feature-row",
-      "162755421969b94743",
       "1627505556014e6d50",
       "162755437284a3a615",
       "feature-columns",
